@@ -1,8 +1,6 @@
 const icons = document.querySelectorAll(".icon img");
 const divs = document.querySelectorAll(".questions__info--answers");
 const answers = document.querySelectorAll(".answer")
-console.log(answers)
-
 
 
 const handleAnswers = (icon, index) => {
@@ -17,7 +15,8 @@ const handleAnswers = (icon, index) => {
    })
 }
 
-icons.forEach((icon, index) => handleAnswers(icon, index))
+icons.forEach(handleAnswers)
+
 
 
 
